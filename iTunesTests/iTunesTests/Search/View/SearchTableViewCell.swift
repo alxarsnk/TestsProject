@@ -10,7 +10,6 @@ import UIKit
 
 class SearchTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
@@ -27,6 +26,5 @@ class SearchTableViewCell: UITableViewCell {
         costLabel.text = String("\(withModel.price)$")
         authorName.text = withModel.author
         descriptionLabel.text = withModel.description
-        
-    }
+     }
 }

@@ -14,11 +14,7 @@ class SettingsViewMock: SettingsViewInput {
     
     var displayAlertCalled = false
     
-    
     func displayAlert(alert: UIAlertController) {
-        
-        displayAlertCalled = true
+         displayAlertCalled = true
     }
-    
-    
 }

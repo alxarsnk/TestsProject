@@ -10,17 +10,15 @@ import Foundation
 @testable import iTunesTests
 
 class SearchPresnterMock: SearchViewOutput {
-    
-    
-   var showSearchSettingsCalled = false
+   
+    var showSearchSettingsCalled = false
     var showFailCalled = false
     
     func showSearchSettings() {
         showSearchSettingsCalled = true
     }
     
-    func showFail() {
+    func showFailAlert() {
         showFailCalled = true
-        
     }
  }

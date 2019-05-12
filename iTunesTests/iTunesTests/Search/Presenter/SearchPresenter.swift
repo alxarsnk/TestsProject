@@ -14,10 +14,17 @@ class SearchPresenter: SearchViewOutput {
     var alertManager: AlertManagerProtocol!
     
     let keyForCoding = "currentSettings"
+    let titleFailErrorConstants = "Error with your request"
+    let bodyFailErrorConstants = "Please use English language"
+    let titleErrorCOnstant = "Error"
+    let titleOopsCOnstant = "Oops..."
+    let titleSettingsConstant = "Your settings"
+    let bodyErrorConstant = "Incorrect Values"
+    let bodyOopsCOnstant = "At first you should set up your settings"
     
     //MARK: - SearchViewOutput
-    func showFail() {
-        view.displayAlert(alert: alertManager.showAlet(title: "Error with your request", body: "Please use English language"))
+    func showFailAlert() {
+        view.displayAlert(alert: alertManager.showAlet(title: titleFailErrorConstants, body:bodyFailErrorConstants ))
     }
     
     func showSearchSettings() {
@@ -44,11 +51,11 @@ class SearchPresenter: SearchViewOutput {
                 }
             } catch let error {
                 print(error)
-                view.displayAlert(alert: alertManager.showAlet(title: "Error", body: "Incorrect Values"))
+                view.displayAlert(alert: alertManager.showAlet(title: titleErrorCOnstant, body: bodyErrorConstant))
             }
-            view.displayAlert(alert: alertManager.showAlet(title: "Your settings", body: info))
+            view.displayAlert(alert: alertManager.showAlet(title: titleSettingsConstant, body: info))
         } else {
-            view.displayAlert(alert: alertManager.showAlet(title: "Oops...", body: "At first you should set up your settings"))
+            view.displayAlert(alert: alertManager.showAlet(title: titleOopsCOnstant, body: bodyOopsCOnstant))
         }
     }
 }

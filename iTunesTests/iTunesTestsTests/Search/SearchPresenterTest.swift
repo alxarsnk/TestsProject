@@ -13,8 +13,7 @@ class SearchPresenterTest: XCTestCase {
     var presenter: SearchPresenter!
     var alertManager =  AlertManager()
     override func setUp() {
-       
-        presenter = SearchPresenter()
+       presenter = SearchPresenter()
     }
 
     override func tearDown() {
@@ -23,13 +22,14 @@ class SearchPresenterTest: XCTestCase {
 
     
     func testShowFail() {
+        
         //given
         let view = SearchViewMock()
         presenter.view = view
         presenter.alertManager = alertManager
         
         //when
-        presenter.showFail()
+        presenter.showFailAlert()
         
         //then
         XCTAssert(view.displayAlertCalled)
@@ -37,6 +37,7 @@ class SearchPresenterTest: XCTestCase {
     }
     
     func testShowSearchSettings() {
+        
         //given
         let view = SearchViewMock()
         presenter.view = view
@@ -50,11 +51,6 @@ class SearchPresenterTest: XCTestCase {
         
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    func testPerformanceExample() { }
 
 }

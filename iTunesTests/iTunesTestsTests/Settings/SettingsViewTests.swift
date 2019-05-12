@@ -12,6 +12,7 @@ import XCTest
 class SettingsViewTests: XCTestCase {
 
     var view: SettingsViewController!
+    
     override func setUp() {
         view = SettingsViewController()
     }
@@ -21,6 +22,7 @@ class SettingsViewTests: XCTestCase {
     }
 
     func testApplySettings() {
+        
         //given
         let presenter = SettingsPreseneterMock()
         view.output = presenter
@@ -30,14 +32,8 @@ class SettingsViewTests: XCTestCase {
         
         //then
         XCTAssert(presenter.applySettingCalled)
-        
-    }
+     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    func testPerformanceExample() { }
 
 }

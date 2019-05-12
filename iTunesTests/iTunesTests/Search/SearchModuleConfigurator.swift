@@ -27,7 +27,7 @@ class SearchModuleConfigurator: NSObject {
         let alertManager = AlertManager()
         
         viewController.output = presenter
-        //viewController.manager =
+        
         presenter.view = viewController
         presenter.alertManager = alertManager
     }

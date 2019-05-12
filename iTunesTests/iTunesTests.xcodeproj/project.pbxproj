@@ -24,7 +24,6 @@
 		1B1640EA224B3BF7002BF972 /* iTunesTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B1640E8224B3BF7002BF972 /* iTunesTests.xcdatamodeld */; };
 		1B1640EC224B3BF8002BF972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1640EB224B3BF8002BF972 /* Assets.xcassets */; };
 		1B1640EF224B3BF8002BF972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1640ED224B3BF8002BF972 /* LaunchScreen.storyboard */; };
-		1B1640FA224B3BF9002BF972 /* iTunesTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1640F9224B3BF9002BF972 /* iTunesTestsTests.swift */; };
 		1B164105224B3BF9002BF972 /* iTunesTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B164104224B3BF9002BF972 /* iTunesTestsUITests.swift */; };
 		1B16411C224B3DC2002BF972 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B164116224B3DC2002BF972 /* SearchPresenter.swift */; };
 		1B16411D224B3DC2002BF972 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B164118224B3DC2002BF972 /* SearchViewController.swift */; };
@@ -83,7 +82,6 @@
 		1B1640EE224B3BF8002BF972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B1640F0224B3BF8002BF972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B1640F5224B3BF9002BF972 /* iTunesTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B1640F9224B3BF9002BF972 /* iTunesTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTestsTests.swift; sourceTree = "<group>"; };
 		1B1640FB224B3BF9002BF972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B164100224B3BF9002BF972 /* iTunesTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B164104224B3BF9002BF972 /* iTunesTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTestsUITests.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 			children = (
 				1BB77176225284F30035115D /* Settings */,
 				1B0F4A2F225119F700793B13 /* Search */,
-				1B1640F9224B3BF9002BF972 /* iTunesTestsTests.swift */,
 				1B1640FB224B3BF9002BF972 /* Info.plist */,
 				1B0F4A27224FCE5100793B13 /* iTunesManagerTest.swift */,
 				1B0F4A29224FCEA600793B13 /* ModelsTest.swift */,
@@ -475,7 +472,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0F4A2C224FDF0C00793B13 /* AlertManagerTests.swift in Sources */,
-				1B1640FA224B3BF9002BF972 /* iTunesTestsTests.swift in Sources */,
 				1BB7717D225288630035115D /* SettingsViewTests.swift in Sources */,
 				1BB7717A225285670035115D /* SearchPresenterTest.swift in Sources */,
 				1B0F4A28224FCE5100793B13 /* iTunesManagerTest.swift in Sources */,

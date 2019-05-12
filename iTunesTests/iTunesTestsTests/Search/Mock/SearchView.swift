@@ -17,6 +17,4 @@ class SearchViewMock: SearchViewInput {
     func displayAlert(alert: UIAlertController) {
         displayAlertCalled = true
     }
-    
-    
 }

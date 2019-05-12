@@ -14,12 +14,7 @@ class SettingsPreseneterMock: SettingsViewOutput {
     
     var applySettingCalled = false
     
-    
     func applySetting(mediaType: MediaTypePicker, deviceType: DeviceTypePicker, limitType: LimitPicker) {
-        
         applySettingCalled = true
     }
-    
-   
-    
 }

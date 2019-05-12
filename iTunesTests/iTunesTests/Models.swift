@@ -9,8 +9,6 @@
 import Foundation
 import  UIKit
 
-
-
 class Settings: NSObject, NSCoding {
    
     @objc var mediaType: String

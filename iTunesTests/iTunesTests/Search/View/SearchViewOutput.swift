@@ -14,5 +14,5 @@ protocol SearchViewOutput: AnyObject {
     func showSearchSettings()
     
     /// показать ошибку
-    func showFail()
+    func showFailAlert()
 }

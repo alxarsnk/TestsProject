@@ -11,9 +11,8 @@ import XCTest
 class AlertManagerTests: XCTestCase {
     
     let alertMAnager = AlertManager()
-    override func setUp() {
-     
-    }
+    
+    override func setUp() { }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
@@ -24,17 +23,15 @@ class AlertManagerTests: XCTestCase {
     }
 
     func testCreatingAlert() {
+        
         //give
         let alert = UIAlertController(title: "some", message: "some", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(alertAction)
         
-        
-        
         //when
         
         let alertTest = alertMAnager.showAlet(title: "some", body: "some")
-        
         
         //then
         
@@ -42,11 +39,6 @@ class AlertManagerTests: XCTestCase {
         XCTAssertEqual(alert.message, alertTest.message, "not equal")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    func testPerformanceExample() { }
 
 }

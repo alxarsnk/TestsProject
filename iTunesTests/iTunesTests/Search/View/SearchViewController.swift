@@ -24,6 +24,7 @@ class SearchViewController: UIViewController, SearchViewInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 200
@@ -34,12 +35,10 @@ class SearchViewController: UIViewController, SearchViewInput {
     //MARK: - SearchViewInput
     
     func displayAlert(alert: UIAlertController) {
-        
         self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func checkCurrentSettingsButton(_ sender: Any) {
-        
         output.showSearchSettings()
     }
 }
@@ -78,7 +77,7 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
-        if searchBar.text != nil || searchBar.text != "" {
+        if searchBar.text != nil && !searchBar.text!.isEmpty {
           
             
             manager.makeRequest(withText: searchBar.text!){ (requestedCellsData) in
@@ -90,7 +89,7 @@ extension SearchViewController: UISearchBarDelegate {
      }
      searchBar.resignFirstResponder()
         if manager.fail == true {
-            output.showFail()
+            output.showFailAlert()
         }
     }
 }

@@ -11,8 +11,6 @@ import XCTest
 
 class ModelsTest: XCTestCase {
 
-    
-    
     override func setUp() {
        
     }
@@ -21,31 +19,26 @@ class ModelsTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     func testCreatingSettingsModel() {
         
         //give
-        var modelTest: Settings!
+        let constant = "some"
         
         //when
-        
-        modelTest = Settings(mediaType: "some", searchLimit: "some", deviceType: "some")
+        let modelTest = Settings(mediaType: constant, searchLimit: constant, deviceType: constant)
         
         //then
         
         XCTAssertNotNil(modelTest, "nil")
     }
     
-    func testEncodingandDecoding() {
-        //give
-       
-        let modelTest = Settings(mediaType: "some", searchLimit: "some", deviceType: "some")
-        var result: Settings?
-        //when
+    func testEncodingAndDecoding() {
         
+        //give
+       let modelTest = Settings(mediaType: "some", searchLimit: "some", deviceType: "some")
+        var result: Settings?
+        
+        //when
         do {
             let archiver = try NSKeyedArchiver.archivedData(withRootObject: modelTest, requiringSecureCoding: false)
             
@@ -68,6 +61,7 @@ class ModelsTest: XCTestCase {
     
         
         //then
+        
         XCTAssertEqual(modelTest.deviceType, result?.deviceType, "not equal")
         XCTAssertEqual(modelTest.searchLimit, result?.searchLimit, "not equal")
         XCTAssertEqual(modelTest.mediaType, result?.mediaType, "not equal")
@@ -76,22 +70,17 @@ class ModelsTest: XCTestCase {
     func testCreatingCellDataModel() {
         
         //give
-        var modelTest: CellData!
+        let constant = "some"
         
-        //when
+         //when
         
-        modelTest = CellData(name: "some", author: "some", description: "some", image: UIImage(), price: "some", url: "some")
+        let modelTest = CellData(name: constant, author: constant, description: constant, image: UIImage(), price: constant, url: constant)
         
         //then
         
         XCTAssertNotNil(modelTest, "nil")
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    func testPerformanceExample() { }
 
 }
